@@ -1,0 +1,12 @@
+<form action="/{{type}}/{{id}}?_method=DELETE" method="POST" name="form">
+    <input type="submit" value="Delete Product">
+</form>
+<button onclick="window.location.href='/products/new';">Add Product</button>
+<div class = 'index'>     
+    <h2>{{product.id}}</h2>
+    <div>{{product.name}}</div>
+    <div>{{product.price}}</div>
+    <div>{{product.inventory}}</div>
+</div>
+<button onclick="window.location.href='/products/{{id}}/edit';">Edit Product</button>
+<button onclick="window.location.href='/products';">Back</button>

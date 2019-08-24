@@ -1,0 +1,11 @@
+<button onclick="window.location.href='/products/new';">Add Product</button>
+<div class = {{type}}> 
+    <h1>PRODUCTS</h1>    
+    {{#each product}}
+    <h2><a href="/products/{{id}}">{{id}}</a></h2>
+    <div>{{name}}</div>
+    <div>{{price}}</div>
+    <div>{{inventory}}</div>
+    {{/each}}
+</div>
+<button onclick="window.location.href='..';">Back</button>

@@ -1,0 +1,12 @@
+<form action="/{{type}}/{{title}}?_method=DELETE" method="POST" name="form">
+    <input type="submit" value="Delete Article">
+</form>
+<button onclick="window.location.href='/articles/new';">Add Article</button>
+<div class = 'index'>     
+    <h2>{{article.title}}</h2>
+    <div>{{article.body}}</div>
+    <div>{{article.author}}</div>
+    <div>{{article.urlTitle}}</div>
+</div>
+<button onclick="window.location.href='/articles/{{title}}/edit';">Edit Article</button>
+<button onclick="window.location.href='/articles';">Back</button>
