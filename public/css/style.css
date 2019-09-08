@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+html {
+  background-color: rosybrown;
+  font-family: 'Roboto', sans-serif; }
+
+.form {
+  position: relative;
+  left: 550px;
+  width: 25%;
+  margin: 30px;
+  padding: 30px;
+  border: 1px black solid;
+  background-color: cornflowerblue;
+  /* height: 100px; */ }
+
+input {
+  position: relative;
+  /* display: flex;
+    align-items: center; */ }

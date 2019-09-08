@@ -2,6 +2,7 @@ const express = require('express');
 const exphbs = require('express-handlebars')
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
+const path = require('path');
 const app = express();
 
 const articleRoutes = require('./routes/articles');
@@ -11,6 +12,7 @@ const PORT = 8080;
 app.use(bodyParser.urlencoded({
     extended: true
 }));
+app.use(express.static(path.join(__dirname, '/public')));
 app.use(methodOverride('_method'));
 app.engine('hbs', exphbs({
     extname: '.hbs',

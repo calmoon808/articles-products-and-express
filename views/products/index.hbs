@@ -2,10 +2,9 @@
 <div class = {{type}}> 
     <h1>PRODUCTS</h1>    
     {{#each product}}
-    <h2><a href="/products/{{id}}">{{id}}</a></h2>
-    <div>{{name}}</div>
-    <div>{{price}}</div>
-    <div>{{inventory}}</div>
+    <h2>ID#{{id}}: <a href="/products/{{id}}">{{name}}</a></h2>
+    <div>Price: {{price}}</div>
+    <div>Stock: {{inventory}}</div>
     {{/each}}
 </div>
 <button onclick="window.location.href='..';">Back</button>

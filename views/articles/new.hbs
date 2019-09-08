@@ -1,3 +1,6 @@
+{{#if hasError}}
+    <h2 id="error">Fill in all parameters</h2>
+{{/if}}
 <form class="form" action="/{{type}}" method="POST" name="form">
         Article Title:<br>
         <input type="text" name="title" value=""><br>

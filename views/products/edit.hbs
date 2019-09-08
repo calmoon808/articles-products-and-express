@@ -1,9 +1,12 @@
-    <form class="form" action="/{{type}}/{{id}}/?_method=PUT" method="POST" name="form">
-        Product Name:<br>
-        <input type="text" name="name" value=""><br>
-        Product Price:<br>
-        <input type="text" name="price" value=""><br>
-        Product Inventory:<br>
-        <input type="text" name="inventory" value=""><br><br>
-        <input type="submit" value="Submit">
-    </form>
+{{#if notInIndex}}
+    <h2 id="error">Product not in index</h2>
+{{/if}}
+<form class="form" action="/{{type}}/{{id}}/?_method=PUT" method="POST" name="form">
+    Product Name:<br>
+    <input type="text" name="name" value=""><br>
+    Product Price:<br>
+    <input type="text" name="price" value=""><br>
+    Product Inventory:<br>
+    <input type="text" name="inventory" value=""><br><br>
+    <input type="submit" value="Submit">
+</form>

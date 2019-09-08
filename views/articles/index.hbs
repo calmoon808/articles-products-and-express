@@ -2,9 +2,9 @@
 <div class = {{type}}>
         <h1>ARTICLES</h1>  
         {{#each article}}
-        <h2><a href="/articles/{{title}}">{{title}}</a></h2>
-        <div>{{body}}</div>
-        <div>{{author}}</div>
+        <h2>Title: <a href="/articles/{{urlTitle}}">{{title}}</a></h2>
+        <div>Author: {{author}}</div>
+        <div>Article: {{body}}</div>
         <div>{{urlTitle}}</div>
         {{/each}}
 </div>
