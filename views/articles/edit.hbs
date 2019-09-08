@@ -1,0 +1,12 @@
+{{#if notInIndex}}
+    <h2 id="error">Article not in index</h2>
+{{/if}}
+<form class="form" action="/{{type}}/{{urlTitle}}?_method=PUT" method="POST" name="form">
+    Article Title:<br>
+    <input type="text" name="title" value=""><br>
+    Article Author:<br>
+    <input type="text" name="author" value=""><br>
+    Article Body:<br>
+    <input type="text" name="body" value=""><br><br>
+    <input type="submit" value="Submit">
+</form>

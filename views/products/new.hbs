@@ -1,0 +1,15 @@
+{{#if hasError}}
+    <h2 id="error">Fill in all parameters</h2>
+{{/if}}
+{{#if notNumber}}
+    <h2 id="error">Price and Inventory should be number values</h2>
+{{/if}}
+<form class="form" action="/{{type}}" method="POST" name="form">
+    Product Name:<br>
+    <input type="text" name="name" value=""><br>
+    Product Price:<br>
+    <input type="text" name="price" value=""><br>
+    Product Inventory:<br>
+    <input type="text" name="inventory" value=""><br><br>
+    <input type="submit" value="Submit">
+</form>

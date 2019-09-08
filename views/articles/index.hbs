@@ -1,0 +1,11 @@
+<button onclick="window.location.href='/articles/new';">Add Article</button>
+<div class = {{type}}>
+        <h1>ARTICLES</h1>  
+        {{#each article}}
+        <h2>Title: <a href="/articles/{{urlTitle}}">{{title}}</a></h2>
+        <div>Author: {{author}}</div>
+        <div>Article: {{body}}</div>
+        <div>{{urlTitle}}</div>
+        {{/each}}
+</div>
+<button onclick="window.location.href='..';">Back</button>
